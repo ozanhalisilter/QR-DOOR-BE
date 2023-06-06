@@ -11,9 +11,8 @@ def generate_otp(user_id: str) -> str:
 
 def validate_otp(string: str) -> bool:
     user_id_base32, otp = string.split("_")
-    user_id = base64.b32decode(user_id_base32).decode()
     totp = pyotp.TOTP(user_id_base32)
-    return string == f"{user_id_base32}_{otp}" and totp.verify(otp)
+    return totp.verify(otp)
 
 @app.get('/otp/{user_id}')
 def generate_otp_endpoint(user_id: str):
