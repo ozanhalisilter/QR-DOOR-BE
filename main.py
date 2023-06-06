@@ -8,6 +8,9 @@ def Generate_OTP(user_id: str):
     totp = pyotp.TOTP(user_id)
     return user_id+"_"+totp.now()
 
+@app.get('/{string}}')
+def test(string: str):
+    return string
 
 @app.get('/validate/{string}')
 def Validate_OTP(string:str):
