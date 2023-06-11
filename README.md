@@ -75,6 +75,3 @@ Our OTP verification API built with FastAPI offers a simple and secure solution 
 
 Feel free to explore our API using the provided Swagger documentation and integrate it into your application to enhance security and user authentication.
 
----
-
-Note: Replace "your-api-base-url" in the Swagger Documentation URL with the actual base URL where your API is deployed.
