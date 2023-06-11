@@ -67,7 +67,7 @@ We have integrated Swagger UI with our API for easy exploration and testing. Swa
 
 To access the Swagger documentation and explore our API, please visit the following URL:
 
-[Swagger Documentation](https://your-api-base-url/docs)
+[Swagger Documentation](https://qr-door-backend.herokuapp.com/docs)
 
 ## Conclusion
 
